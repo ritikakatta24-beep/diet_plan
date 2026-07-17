@@ -1,0 +1,206 @@
+dish_name,meal_type,diet_type,component_type,base_portion,base_calories,base_carbs_g,base_protein_g,base_fats_g,unit_type,portion_increment
+Idli,breakfast,veg,complete,2 pieces (100g),78,16,2,0.4,discrete,1
+Plain Dosa,breakfast,veg,complete,1 piece (80g),133,18,3,5,discrete,1
+Masala Dosa,breakfast,veg,complete,1 piece (150g),250,35,5,10,discrete,1
+Sambar (breakfast side),breakfast,veg,side,1 bowl (150ml),120,18,6,3,continuous,0.25
+Upma,breakfast,veg,complete,1 bowl (200g),250,40,6,7,continuous,0.25
+Poha,breakfast,veg,complete,1 bowl (200g),270,45,5,8,continuous,0.25
+Aloo Paratha,breakfast,veg,complete,1 piece (100g),260,36,6,10,discrete,1
+Plain Paratha,breakfast,veg,complete,1 piece (70g),210,27,4,9,discrete,1
+Besan Chilla,breakfast,veg,complete,2 pieces (150g),220,24,10,9,discrete,1
+Moong Dal Chilla,breakfast,veg,complete,2 pieces (150g),200,20,12,7,discrete,1
+Vegetable Daliya,breakfast,veg,complete,1 bowl (200g),230,40,7,4,continuous,0.25
+Oats Porridge,breakfast,veg,complete,1 bowl (200g),190,32,6,4,continuous,0.25
+Sprouts Salad,breakfast,veg,side,1 bowl (150g),120,18,8,1,continuous,0.25
+Plain Uttapam,breakfast,veg,complete,1 piece (120g),180,28,4,5,discrete,1
+Medu Vada,breakfast,veg,complete,2 pieces (100g),200,20,6,11,discrete,1
+Rava Idli,breakfast,veg,complete,2 pieces (120g),190,28,5,6,discrete,1
+Idiyappam,breakfast,veg,complete,2 pieces (100g),150,32,3,1,discrete,1
+Appam,breakfast,veg,complete,2 pieces (120g),210,38,4,4,discrete,1
+Dhokla,breakfast,veg,snack,4 pieces (100g),160,24,6,4,discrete,1
+Sabudana Khichdi,breakfast,veg,complete,1 bowl (200g),300,50,4,10,continuous,0.25
+Misal Pav,breakfast,veg,complete,1 plate (250g),350,45,12,14,continuous,0.25
+Paneer Paratha,breakfast,veg,complete,1 piece (130g),320,32,12,16,discrete,1
+Stuffed Gobi Paratha,breakfast,veg,complete,1 piece (120g),280,34,7,12,discrete,1
+Steamed Rice,lunch_dinner,veg,grain,1 cup (150g),195,43,4,0.4,continuous,0.25
+Jeera Rice,lunch_dinner,veg,grain,1 cup (150g),220,40,4,5,continuous,0.25
+Chapati,lunch_dinner,veg,grain,1 piece (40g),104,18,3,2.5,discrete,1
+Veg Pulao,lunch_dinner,veg,grain,1 bowl (200g),300,50,6,8,continuous,0.25
+Curd Rice,lunch_dinner,veg,grain,1 bowl (200g),250,40,7,6,continuous,0.25
+Dal Tadka,lunch_dinner,veg,curry,1 bowl (150g),165,20,9,3,continuous,0.25
+Dal Makhani,lunch_dinner,veg,curry,1 bowl (150g),280,22,10,16,continuous,0.25
+Rajma,lunch_dinner,veg,curry,1 bowl (150g),210,30,10,4,continuous,0.25
+Chole,lunch_dinner,veg,curry,1 bowl (150g),245,32,10,5,continuous,0.25
+Sambar,lunch_dinner,veg,curry,1 bowl (150g),120,18,6,3,continuous,0.25
+Rasam,lunch_dinner,veg,curry,1 bowl (150ml),80,12,3,2,continuous,0.25
+Paneer Butter Masala,lunch_dinner,veg,curry,1 bowl (150g),320,12,12,25,continuous,0.25
+Palak Paneer,lunch_dinner,veg,curry,1 bowl (150g),260,10,12,18,continuous,0.25
+Malai Kofta,lunch_dinner,veg,curry,2 pieces+gravy (180g),350,20,8,26,discrete,1
+Kadhi,lunch_dinner,veg,curry,1 bowl (150g),100,12,5,3,continuous,0.25
+Aloo Gobi,lunch_dinner,veg,side,1 bowl (150g),120,20,4,3,continuous,0.25
+Bhindi Masala,lunch_dinner,veg,side,1 bowl (150g),92,12,3,3,continuous,0.25
+Baingan Bharta,lunch_dinner,veg,side,1 bowl (150g),110,14,3,3,continuous,0.25
+Mixed Veg Curry,lunch_dinner,veg,side,1 bowl (150g),130,18,4,3,continuous,0.25
+Lauki Sabzi,lunch_dinner,veg,side,1 bowl (150g),80,12,2,2,continuous,0.25
+Gobi Matar,lunch_dinner,veg,side,1 bowl (150g),120,15,5,3,continuous,0.25
+Dum Aloo,lunch_dinner,veg,side,1 bowl (150g),170,24,4,5,continuous,0.25
+Veg Biryani,lunch_dinner,veg,complete,1 plate (250g),380,55,8,14,continuous,0.25
+Veg Kofta Curry,lunch_dinner,veg,curry,2 pieces+gravy (180g),300,22,6,20,discrete,1
+Green Salad,lunch_dinner,veg,side,1 bowl (150g),50,10,2,0.3,continuous,0.25
+Curd/Dahi,lunch_dinner,veg,side,1 bowl (100g),60,4,3,3.5,continuous,0.25
+Papad (roasted),lunch_dinner,veg,side,1 piece (10g),35,6,2,0.5,discrete,1
+Pav Bhaji,lunch_dinner,veg,complete,1 plate (300g),400,50,10,18,continuous,0.25
+Samosa,snack,veg,snack,1 piece (60g),150,18,3,8,discrete,1
+Kachori,snack,veg,snack,1 piece (60g),180,20,4,10,discrete,1
+Sprouts Chaat,snack,veg,snack,1 bowl (150g),130,18,8,2,continuous,0.25
+Roasted Chana,snack,veg,snack,1 small bowl (50g),180,27,10,3,continuous,0.25
+Fruit Chaat,snack,veg,snack,1 bowl (150g),100,24,2,0.5,continuous,0.25
+Peanut Chaat,snack,veg,snack,1 bowl (80g),250,14,10,18,continuous,0.25
+Murukku,snack,veg,snack,6 pieces (50g),240,26,4,13,discrete,1
+Banana Chips,snack,veg,snack,1 small pack (40g),220,24,1,14,continuous,0.25
+Buttermilk (Chaas),snack,veg,beverage,1 glass (200ml),40,4,2,1.5,continuous,0.25
+Sweet Lassi,snack,veg,beverage,1 glass (250ml),200,30,6,6,continuous,0.25
+Sweet Corn Chaat,snack,veg,snack,1 bowl (150g),140,24,4,3,continuous,0.25
+Boiled Corn,snack,veg,snack,1 cup (150g),130,27,4,1.5,continuous,0.25
+Roasted Makhana,snack,veg,snack,1 bowl (30g),110,18,3,3,continuous,0.25
+Mixed Nuts,snack,veg,snack,small handful (30g),180,6,6,15,continuous,0.25
+Khakhra,snack,veg,snack,2 pieces (40g),150,24,4,4,discrete,1
+Vegetable Cutlet,snack,veg,snack,2 pieces (100g),200,24,5,9,discrete,1
+Bread Pakora,snack,veg,snack,1 piece (80g),220,22,5,13,discrete,1
+Paneer Tikka,snack,veg,snack,6 pieces (150g),280,8,18,20,discrete,1
+Masala Chai,snack,veg,beverage,1 cup (150ml),80,10,2,3,continuous,0.25
+Vada Pav,snack,veg,snack,1 piece (120g),290,40,6,12,discrete,1
+Veg Sandwich,snack,veg,complete,1 sandwich (130g),250,35,7,9,continuous,0.25
+Kheer,snack,veg,snack,1 bowl (100g),180,28,4,6,continuous,0.25
+Boiled Eggs,breakfast,non-veg,side,2 pieces (100g),155,1,13,11,discrete,1
+Egg Bhurji,breakfast,non-veg,complete,1 serving (150g),220,4,14,16,continuous,0.25
+Plain Omelette,breakfast,non-veg,complete,1 serving (120g),210,2,13,16,continuous,0.25
+Egg Paratha,breakfast,non-veg,complete,1 piece (130g),300,30,12,15,discrete,1
+Chicken Sausage,breakfast,non-veg,side,2 pieces (100g),220,4,12,18,discrete,1
+Keema Paratha,breakfast,non-veg,complete,1 piece (150g),350,28,16,18,discrete,1
+Anda Bhurji Pav,breakfast,non-veg,complete,1 plate (180g),320,30,14,16,continuous,0.25
+Egg Dosa,breakfast,non-veg,complete,1 piece (130g),220,20,12,10,discrete,1
+Chicken Curry,lunch_dinner,non-veg,curry,1 bowl (200g),280,8,25,16,continuous,0.25
+Butter Chicken,lunch_dinner,non-veg,curry,1 bowl (200g),380,10,24,26,continuous,0.25
+Chicken Tikka,lunch_dinner,non-veg,side,6 pieces (150g),250,4,30,12,discrete,1
+Tandoori Chicken,lunch_dinner,non-veg,side,2 pieces (200g),300,3,35,16,discrete,1
+Fish Curry,lunch_dinner,non-veg,curry,1 bowl (200g),250,6,22,15,continuous,0.25
+Fish Fry,lunch_dinner,non-veg,side,2 pieces (150g),280,8,24,17,discrete,1
+Mutton Curry,lunch_dinner,non-veg,curry,1 bowl (200g),350,6,28,24,continuous,0.25
+Egg Curry,lunch_dinner,non-veg,curry,2 eggs (200g),280,8,16,20,discrete,1
+Chicken Biryani,lunch_dinner,non-veg,complete,1 plate (300g),450,55,22,16,continuous,0.25
+Prawn Curry,lunch_dinner,non-veg,curry,1 bowl (180g),240,6,20,15,continuous,0.25
+Chicken Sandwich,snack,non-veg,complete,1 sandwich (150g),320,30,20,14,continuous,0.25
+Chicken Kosha,lunch_dinner,non-veg,curry,1 bowl (200g),320,6,26,20,continuous,0.25
+Kerala Chicken Stew,lunch_dinner,non-veg,curry,1 bowl (200g),260,8,22,16,continuous,0.25
+Chicken Chettinad,lunch_dinner,non-veg,curry,1 bowl (200g),300,6,26,20,continuous,0.25
+Chicken Do Pyaza,lunch_dinner,non-veg,curry,1 bowl (200g),290,8,25,18,continuous,0.25
+Chicken Korma,lunch_dinner,non-veg,curry,1 bowl (200g),340,8,24,24,continuous,0.25
+Chicken 65,snack,non-veg,snack,1 plate (150g),320,12,26,18,continuous,0.25
+Chicken Manchurian,snack,non-veg,snack,1 plate (150g),300,18,22,16,continuous,0.25
+Chicken Lollipop,snack,non-veg,snack,4 pieces (150g),280,10,24,16,discrete,1
+Grilled Chicken Breast,lunch_dinner,non-veg,side,1 piece (150g),230,0,40,6,discrete,1
+Chicken Seekh Kebab,snack,non-veg,snack,3 pieces (150g),280,4,26,18,discrete,1
+Chicken Malai Tikka,snack,non-veg,snack,6 pieces (150g),300,4,26,20,discrete,1
+Chicken Roll (Kathi),snack,non-veg,complete,1 roll (180g),380,34,22,18,continuous,0.25
+Chicken Momos,snack,non-veg,snack,6 pieces (150g),260,30,16,8,discrete,1
+Chicken Fried Rice,lunch_dinner,non-veg,complete,1 plate (250g),400,50,20,14,continuous,0.25
+Chicken Noodles,lunch_dinner,non-veg,complete,1 plate (250g),380,48,18,14,continuous,0.25
+Mutton Rogan Josh,lunch_dinner,non-veg,curry,1 bowl (200g),380,8,26,26,continuous,0.25
+Mutton Biryani,lunch_dinner,non-veg,complete,1 plate (300g),480,50,24,20,continuous,0.25
+Mutton Kebab,snack,non-veg,snack,3 pieces (150g),300,4,26,20,discrete,1
+Mutton Keema,lunch_dinner,non-veg,curry,1 bowl (200g),340,6,24,24,continuous,0.25
+Fish Tikka,snack,non-veg,snack,6 pieces (150g),240,4,28,12,discrete,1
+Fish Amritsari,snack,non-veg,snack,6 pieces (150g),280,14,24,14,discrete,1
+Fish Biryani,lunch_dinner,non-veg,complete,1 plate (300g),420,50,22,16,continuous,0.25
+Goan Fish Curry,lunch_dinner,non-veg,curry,1 bowl (200g),260,8,22,16,continuous,0.25
+Steamed Fish (Bengali style),lunch_dinner,non-veg,side,1 piece (150g),160,2,26,5,discrete,1
+Prawn Fry,lunch_dinner,non-veg,side,1 bowl (150g),240,6,22,14,continuous,0.25
+Prawn Biryani,lunch_dinner,non-veg,complete,1 plate (300g),420,50,22,15,continuous,0.25
+Crab Curry,lunch_dinner,non-veg,curry,1 bowl (200g),250,8,20,15,continuous,0.25
+Egg Fried Rice,lunch_dinner,non-veg,complete,1 plate (250g),380,50,14,12,continuous,0.25
+Egg Roll,snack,non-veg,complete,1 roll (180g),340,32,14,16,continuous,0.25
+Egg Masala,lunch_dinner,non-veg,curry,2 eggs (200g),260,6,14,18,discrete,1
+Egg Biryani,lunch_dinner,non-veg,complete,1 plate (280g),400,48,16,16,continuous,0.25
+Boiled Egg Salad,snack,non-veg,snack,1 bowl (150g),180,4,14,12,continuous,0.25
+Egg Sandwich,snack,non-veg,complete,1 sandwich (150g),300,28,14,14,continuous,0.25
+Chicken Shawarma,snack,non-veg,complete,1 roll (200g),420,34,26,20,continuous,0.25
+Chicken Burger,snack,non-veg,complete,1 burger (200g),450,40,24,20,continuous,0.25
+Grilled Fish,lunch_dinner,non-veg,side,1 piece (150g),170,2,28,5,discrete,1
+Chicken Soup,snack,non-veg,side,1 bowl (200ml),120,6,14,4,continuous,0.25
+Mutton Soup,snack,non-veg,side,1 bowl (200ml),150,4,16,8,continuous,0.25
+Prawn Masala,lunch_dinner,non-veg,curry,1 bowl (180g),260,8,20,16,continuous,0.25
+Chicken Vindaloo,lunch_dinner,non-veg,curry,1 bowl (200g),340,10,24,22,continuous,0.25
+Chicken Kadhai,lunch_dinner,non-veg,curry,1 bowl (200g),300,8,25,18,continuous,0.25
+Chicken Tikka Wrap,snack,non-veg,complete,1 wrap (180g),360,30,22,16,continuous,0.25
+Chicken Cutlet,snack,non-veg,snack,2 pieces (120g),260,16,18,14,discrete,1
+Roasted Soybean,snack,veg,snack,1 small bowl (40g),190,10,18,9,continuous,0.25
+Boiled Chana Chaat,snack,veg,snack,1 bowl (150g),180,25,12,3,continuous,0.25
+Grilled Paneer Cubes,snack,veg,snack,1 bowl (100g),220,4,16,16,continuous,0.25
+Hung Curd with Nuts,snack,veg,snack,1 bowl (150g),180,8,12,10,continuous,0.25
+Moong Sprouts Bowl,snack,veg,snack,1 bowl (150g),140,18,10,2,continuous,0.25
+Boiled Peanuts,snack,veg,snack,1 small bowl (50g),170,8,8,12,continuous,0.25
+Sattu Drink,snack,veg,snack,1 glass (200ml),150,20,8,3,continuous,0.25
+Soya Chaap Tikka,snack,veg,snack,4 pieces (150g),260,10,20,14,discrete,1
+Roasted Chickpeas (Masala),snack,veg,snack,1 small bowl (50g),170,24,9,4,continuous,0.25
+Boiled Egg Chaat,snack,non-veg,snack,1 bowl (150g),200,6,14,12,continuous,0.25
+Egg White Bhurji,snack,non-veg,snack,1 bowl (80g),70,1,12,1.5,continuous,0.25
+Grilled Chicken Bites,snack,non-veg,snack,1 bowl (100g),180,0,30,6,continuous,0.25
+Chicken Satay Skewers,snack,non-veg,snack,3 skewers (120g),220,4,24,12,discrete,1
+"Moong Dal (Thin, No Tadka)",lunch_dinner,veg,curry,1 bowl (150g),120,18,8,1.5,continuous,0.25
+Tomato Dal,lunch_dinner,veg,curry,1 bowl (150g),130,20,7,2,continuous,0.25
+Lauki Chana Dal (Low Oil),lunch_dinner,veg,curry,1 bowl (150g),150,20,8,3,continuous,0.25
+Vegetable Stew (Light),lunch_dinner,veg,curry,1 bowl (150g),140,16,4,4,continuous,0.25
+"Chicken Curry (Home-style, Low Oil)",lunch_dinner,non-veg,curry,1 bowl (190g),190,6,26,5,continuous,0.25
+"Fish Curry (Light, Steamed-base)",lunch_dinner,non-veg,curry,1 bowl (160g),160,6,24,4,continuous,0.25
+Chicken Stew (Light Coconut),lunch_dinner,non-veg,curry,1 bowl (180g),180,8,22,5,continuous,0.25
+Grilled Chicken Curry (Low Oil),lunch_dinner,non-veg,curry,1 bowl (190g),190,4,28,5,continuous,0.25
+Upma,lunch_dinner,veg,complete,1 bowl (200g),250,40,6,7,continuous,0.25
+Poha,lunch_dinner,veg,complete,1 bowl (200g),270,45,5,8,continuous,0.25
+Veg Sandwich,lunch_dinner,veg,complete,1 sandwich (130g),250,35,7,9,continuous,0.25
+Boiled Soya Chunks,lunch_dinner,veg,side,1 bowl (100g),100,6,15,1.5,continuous,0.25
+Soya Chunks Curry (Low Oil),lunch_dinner,veg,curry,1 bowl (150g),150,8,18,4,continuous,0.25
+Sprouts & Soya Protein Bowl,lunch_dinner,veg,side,1 bowl (150g),160,14,16,5,continuous,0.25
+Tofu Bhurji (Low Oil),lunch_dinner,veg,curry,1 bowl (150g),140,5,15,6,continuous,0.25
+Paneer Bhurji (Low Oil),lunch_dinner,veg,curry,1 bowl (150g),160,6,15,8,continuous,0.25
+Boiled Chicken Breast,lunch_dinner,non-veg,side,1 bowl (150g),180,0,35,4,continuous,0.25
+Egg Whites (Steamed/Boiled),lunch_dinner,non-veg,side,1 bowl (100g),80,1,15,0.5,continuous,0.25
+Chicken Breast Curry (Extra Lean),lunch_dinner,non-veg,curry,1 bowl (180g),180,4,30,4,continuous,0.25
+Grilled Fish (Extra Lean),lunch_dinner,non-veg,side,1 piece (150g),170,2,28,5,discrete,1
+"Prawns (Steamed, Low Oil)",lunch_dinner,non-veg,side,1 bowl (150g),160,4,24,4,continuous,0.25
+Paneer Bhurji Toast,breakfast,veg,complete,1 serving (150g),220,18,14,10,continuous,0.25
+Egg White Toast,breakfast,non-veg,complete,1 serving (150g),200,20,16,6,continuous,0.25
+Whey Protein Shake,snack,veg,beverage,1 scoop with water (250ml),150,5,25,2,continuous,0.25
+Plant Protein Shake,snack,veg,beverage,1 scoop with water (250ml),140,6,22,2,continuous,0.25
+Quinoa (Steamed),lunch_dinner,veg,grain,1 cup (185g),200,35,8,3.5,continuous,0.25
+Kaale Chana Kabab,snack,veg,snack,3 pieces (120g),180,18,10,7,discrete,1
+Kaale Chana Curry (Low Oil),lunch_dinner,veg,curry,1 bowl (150g),170,22,10,4,continuous,0.25
+Paneer Sandwich,breakfast,veg,complete,1 sandwich (150g),280,28,16,12,continuous,0.25
+Whey Protein Shake,breakfast,veg,side,1 scoop with water (250ml),150,5,25,2,continuous,0.25
+Plant Protein Shake,breakfast,veg,side,1 scoop with water (250ml),140,6,22,2,continuous,0.25
+Whey Protein Shake,lunch_dinner,veg,side,1 scoop with water (250ml),150,5,25,2,continuous,0.25
+Plant Protein Shake,lunch_dinner,veg,side,1 scoop with water (250ml),140,6,22,2,continuous,0.25
+Peanut Butter (2 tbsp),breakfast,veg,side,2 tbsp (32g),190,7,8,16,continuous,0.25
+Peanut Butter (2 tbsp),snack,veg,snack,2 tbsp (32g),190,7,8,16,continuous,0.25
+Paneer Stuffed Dosa,breakfast,veg,complete,1 piece (180g),290,28,14,12,discrete,1
+Paneer Stuffed Moong Dal Chilla,breakfast,veg,complete,1 piece (160g),260,20,16,11,discrete,1
+Protein Oats Bowl (with Paneer/Whey),breakfast,veg,complete,1 bowl (250g),280,26,20,8,discrete,1
+Paneer Bhurji Roti Roll,breakfast,veg,complete,1 roll (180g),300,20,22,13,discrete,1
+Paneer Bhurji Toast Extra,snack,veg,snack,1 toast (150g),240,16,20,11,discrete,1
+Paneer Stuffed Uttapam,breakfast,veg,complete,1 piece (170g),270,26,15,11,discrete,1
+Paneer Tikka Curry (Low Oil),lunch_dinner,veg,curry,1 bowl (180g),210,8,20,12,continuous,0.25
+Rajma Curry (High Protein),lunch_dinner,veg,curry,1 bowl (180g),190,26,10,6,continuous,0.25
+Chana Masala (High Protein),lunch_dinner,veg,curry,1 bowl (180g),200,28,10,6,continuous,0.25
+Soya Granules Poha (High Protein),breakfast,veg,complete,1 bowl (220g),260,24,20,6,discrete,1
+Sattu Paratha (Low Oil),breakfast,veg,complete,1 piece (150g),240,18,26,7,discrete,1
+Boiled Soya Chunks Side,breakfast,veg,side,100g,100,15,8,1.5,continuous,0.25
+Moong Sprouts & Soya Bowl,lunch_dinner,veg,side,1 bowl (150g),140,14,12,3,continuous,0.25
+Moong Dal Idli,breakfast,veg,complete,3 pieces (150g),200,32,14,1.8,discrete,1
+Sprouts Oats Idli,breakfast,veg,complete,3 pieces (160g),210,28,15,2.5,discrete,1
+Vegetable Daliya with Sprouts,breakfast,veg,complete,1 bowl (230g),220,37,10,3,discrete,1
+Soya Keema Curry (Low Oil),lunch_dinner,veg,curry,1 bowl (160g),190,20,16,4,continuous,0.25
+Chana Sundal (Low Oil),lunch_dinner,veg,curry,1 bowl (170g),170,23,12,3,continuous,0.25
+Roasted Chana Snack (No Oil),snack,veg,snack,1 bowl (100g),150,22,11,2,continuous,0.25
+Steamed Soya Chaat (No Oil),snack,veg,snack,1 bowl (140g),140,17,12,2.5,continuous,0.25
+Steamed Dhokla (No Oil),snack,veg,snack,4 pieces (140g),140,26,6,1.5,discrete,1
+Sattu Drink (Savory),snack,veg,beverage,1 glass (200ml),120,14,10,2,continuous,0.25
