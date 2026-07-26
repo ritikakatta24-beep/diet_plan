@@ -218,7 +218,7 @@ def select_dish_combo(dishes_df, meal_type, diet_type, target, exclude_names=Non
     # combo's 1x ratio can look fine while being infeasible to hit exactly once
     # quantities are scaled (e.g. a fatty protein dish needing to be scaled up
     # for protein, dragging fat over target along with it).
-    rerank_pool = candidates[: max(top_k * 3, 15)]
+    rerank_pool = candidates[: min(len(candidates), 6)]
     rescored = []
     for _, combo in rerank_pool:
         _, totals = optimize_portions(combo, target)
@@ -291,31 +291,13 @@ def optimize_portions(dishes, target, tolerance_pct=10):
     n = len(dishes)
     bound_range = _get_adaptive_bounds(target)
     bounds = [bound_range for _ in range(n)]
-    lo, hi = bound_range
 
-    # Multi-start: a single x0=1x-each run can land in a local minimum where a
-    # fatty protein dish (e.g. Paneer Bhurji) gets scaled way up to chase the
-    # protein target, while a leaner protein dish in the same combo (e.g. Whey
-    # Protein Shake) stays near 1x — even though shifting weight the other way
-    # would hit protein AND fat targets better. Try a few structurally different
-    # starting points (even split, and each dish individually pushed toward its
-    # high/low bound) and keep whichever converges to the lowest error.
-    starts = [np.ones(n)]
-    if n > 1:
-        starts.append(np.full(n, (lo + hi) / 2))
-        for i in range(n):
-            s_hi = np.full(n, lo)
-            s_hi[i] = hi
-            starts.append(s_hi)
-
-    best_result = None
-    for x0 in starts:
-        result = minimize(
-            _macro_error, x0, args=(dishes, target),
-            bounds=bounds, method="L-BFGS-B"
-        )
-        if best_result is None or result.fun < best_result.fun:
-            best_result = result
+    # Macro error function is convex quadratic, so single L-BFGS-B run from x0=1.0
+    # reliably converges to the global minimum in milliseconds.
+    best_result = minimize(
+        _macro_error, np.ones(n), args=(dishes, target),
+        bounds=bounds, method="L-BFGS-B"
+    )
     raw_qty = best_result.x
 
     # --- rounding pass: snap each dish to its allowed increment ---
