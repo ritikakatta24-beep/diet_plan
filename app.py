@@ -18,23 +18,6 @@ Pipeline:
   4. generate_day_plan()      -> combine all meals for one day
   5. generate_week_plan()     -> loop 7 days with shuffle/no-repeat tracking
 
-Changelog (fixes validated against nutrition_dataset_v1.csv, 300-sample runs,
-both veg and non-veg — see conversation notes for full before/after numbers):
-  - _get_adaptive_bounds(): now also extends portion-quantity bounds for
-    high-carb targets (was silently capping grain/carb dishes at 1.75x for
-    protein/fat-normal-but-carb-heavy targets, under-delivering carbs).
-  - _assess_target_feasibility(): now flags LOW protein/fat ratio targets too,
-    not just high — these were empirically just as hard to hit.
-  - _check_supplement_need(): still computed internally per day (measures the
-    ACTUAL generated plan's protein/fat/carb shortfall or overshoot) so the
-    logic/telemetry is preserved for future use, but as of this revision the
-    resulting message is NOT included in the API response — the app no longer
-    wants a "consider a protein shake" popup surfaced to the user.
-  - Day/week macro totals (calories/protein/carbs/fats) are computed internally
-    for portion optimization and rebalancing, but are NOT included in the final
-    per-day or per-week API response — the app only wants dish/portion detail.
-  - Added optional `seed` param to generate_week_plan() for deterministic
-    output in automated tests (production calls should leave it as None).
 """
 
 import os
@@ -44,6 +27,7 @@ import pandas as pd
 import numpy as np
 from scipy.optimize import minimize
 from flask import Flask, request, jsonify
+import traceback
 
 # The dish CSV always ships in the same folder as this script, so we build
 # its path relative to this file's own location. This works no matter which
@@ -629,11 +613,10 @@ def generate_diet_plan_endpoint():
         return jsonify(result)
 
     except Exception as e:
-        # Log the full trace server-side, but never leak exception internals
-        # (file paths, stack details) to the client — that's an information
-        # disclosure risk once this is public on the Play Store.
-        app.logger.exception("generate-diet-plan failed")
-        return jsonify({"error": "Internal error generating diet plan"}), 500
+        traceback.print_exc()
+        return jsonify({
+            "error": str(e)
+        }), 500
 
 
 @app.route("/health", methods=["GET"])
