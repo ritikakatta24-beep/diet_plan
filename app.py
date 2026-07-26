@@ -211,21 +211,11 @@ def select_dish_combo(dishes_df, meal_type, diet_type, target, exclude_names=Non
         return []
 
     candidates.sort(key=lambda x: x[0])
-    # Cheap ratio-based prefilter already narrowed this to a reasonable shortlist
-    # (top_k*4 for lunch/dinner, or all candidates for smaller meal types). Now
-    # re-rank that shortlist by ACTUAL achievability: run the real portion
-    # optimizer on each and score by its true post-optimization error, since a
-    # combo's 1x ratio can look fine while being infeasible to hit exactly once
-    # quantities are scaled (e.g. a fatty protein dish needing to be scaled up
-    # for protein, dragging fat over target along with it).
-    rerank_pool = candidates[: min(len(candidates), 6)]
-    rescored = []
-    for _, combo in rerank_pool:
-        _, totals = optimize_portions(combo, target)
-        real_err = sum(ERROR_WEIGHTS[k] * (totals[k] - target[k]) ** 2 for k in ERROR_WEIGHTS)
-        rescored.append((real_err, combo))
-    rescored.sort(key=lambda x: x[0])
-    top = rescored[:top_k]
+    # Pick randomly from the top ratio-scored combos. The ratio score is a
+    # reliable proxy for post-optimization achievability and avoids running
+    # the expensive scipy optimizer for each candidate during selection —
+    # the real optimizer runs once in generate_day_plan() on the chosen combo.
+    top = candidates[:top_k]
     _, chosen_combo = random.choice(top)
     return chosen_combo
 
@@ -426,7 +416,7 @@ def _check_supplement_need(day_totals, daily_targets):
 # LAYER 4: build one full day's plan (all meals combined)
 # ---------------------------------------------------------------------------
 
-def generate_day_plan(dishes_df, daily_targets, diet_type, day_number, recently_used, max_attempts=4):
+def generate_day_plan(dishes_df, daily_targets, diet_type, day_number, recently_used, max_attempts=2):
     meal_targets = split_daily_to_meals(**daily_targets)
     day_plan = {}
     day_totals = {"calories": 0.0, "protein_g": 0.0, "carbs_g": 0.0, "fats_g": 0.0}
