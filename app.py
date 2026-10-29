@@ -403,7 +403,8 @@ def _check_supplement_need(day_totals, daily_targets):
 
     parts = []
     for k, v in shortfalls.items():
-        parts.append(f"{v}% short on {k} ({SUPPLEMENT_OPTIONS[k]} would help)")
+        hint = SUPPLEMENT_OPTIONS.get(k, "a carb-rich side like rice, roti, or fruit")
+        parts.append(f"{v}% short on {k} ({hint} would help)")
     for k, v in overshoots.items():
         explanation = OVERSHOOT_EXPLANATIONS.get(k, "the dish pool couldn't get closer at this target")
         parts.append(f"{v}% over on {k} ({explanation})")
